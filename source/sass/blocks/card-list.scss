@@ -1,0 +1,49 @@
+.card-list {
+  @include list-reset;
+  text-transform: none;
+  padding: 16px 0 40px;
+  text-align: left;
+}
+
+.card-list__item {
+  background-color: $white-color;
+  padding: 40px 20px 20px 18px;
+  margin-bottom: 20px;
+}
+
+.card-list__subtitle {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 32px;
+  margin: 0;
+  margin-bottom: 4px;
+}
+
+.card-list__description {
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.card-list__price {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 32px;
+  margin-right: 50px;
+}
+
+.card-list__button {
+  font-size: 14px;
+  line-height: 20px;
+  color: $white-color;
+  background-color: $base-color;
+  padding: 8px 20px;
+}
+
+.card-list__wrapper {
+  margin-bottom: 24px;
+}
+
+.card-list__image {
+  margin: 0 auto;
+  display: block;
+}

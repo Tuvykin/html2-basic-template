@@ -30,6 +30,7 @@
     top: 60px;
     left: 0;
     background-color: $white-color;
+    z-index: 1;
   }
 
   .main-nav--closed .main-nav__toogle::after {

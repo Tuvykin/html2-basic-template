@@ -1,0 +1,45 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 40px;
+  text-transform: none;
+  text-align: left;
+}
+
+.form__title {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.form__group {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.form__list {
+  @include list-reset;
+}
+
+.form__item {
+  margin-bottom: 20px;
+}
+
+.form__button {
+  background-color: $base-color;
+  color: $white-color;
+  padding: 8px 20px;
+  display: block;
+  width: 280px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.form__button--reset {
+  background-color: $white-color;
+  color: $base-color;
+  margin-top: 20px;
+}
+

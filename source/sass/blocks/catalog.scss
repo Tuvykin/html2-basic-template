@@ -1,0 +1,41 @@
+.catalog {
+  background-color: #f8f8f8;
+  padding: 50px 20px 44px;
+}
+
+.catalog__description {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: none;
+}
+
+.catalog__sorting-text {
+  font-weight: 600;
+  text-transform: none;
+  margin-right: 8px;
+}
+
+.catalog__sorting-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.catalog__sorting-filter {
+  margin-left: auto;
+  width: 165px;
+  border: none;
+  appearance: none;
+  padding: 10px;
+  padding-right: 30px;
+  font-family: $main-font;
+  font-weight: 600;
+  color: $base-color;
+  background-color: inherit;
+  background-image: url("../../images/icons/stack.svg#icon-sorting-arrow");
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+  background-size: 10px 6px;
+}
