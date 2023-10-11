@@ -1,0 +1,40 @@
+.user-list {
+  @include list-reset;
+  width: 180px;
+  justify-content: flex-end;
+}
+
+.user-list__link {
+  width: 60px;
+  height: 60px;
+  display: block;
+  position: relative;
+  padding: 22px;
+}
+
+.user-list__link::after {
+  content: "";
+  background-color: #333333;
+  width: 16px;
+  display: block;
+  height: 16px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.user-list__link--account::after {
+  mask-image: url("../../images/icons/stack.svg#icon-user");
+}
+
+.user-list__link--basket::after {
+  mask-image: url("../../images/icons/stack.svg#icon-basket");
+}
+
+@media (min-width: $tablet-width) {
+  .user-list__link {
+    padding: 32px 22px;
+    height: 80px;
+  }
+}

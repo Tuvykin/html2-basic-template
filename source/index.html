@@ -1,14 +1,133 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <title>Название проекта</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body class="page__body">
-    <header class="header">Шапка</header>
 
-    <script src="js/script.js" defer></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <title>DRINK2GO</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Montserrat-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+</head>
+
+<body class="page__body">
+  <div class="container container--design">
+    <header class="main-header" data-test="header">
+      <a class="main-header__logo">
+        <span class="main-header__logo-text">D<span
+            class="main-header__logo-text main-header__logo-text--desktop">rink</span></span>
+        <img class="main-header__logo-image" src="images/icon-logo.svg" alt="Логотип интернет-магазин
+  кофейных напитков" width="32" height="36">
+        <span class="main-header__logo-text">G<span
+            class="main-header__logo-text main-header__logo-text--desktop">o</span></span>
+        <p class="main-header__logo-description">Интернет-магазин
+          кофейных напитков</p>
+      </a>
+      <nav class="main-nav main-nav--closed">
+        <ul class="main-nav__list nav-list">
+          <li class="nav-list__item">
+            <a class="nav-list__link nav-list__link--current">Главная</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link">Каталог</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link">Доставка</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link">О нас</a>
+          </li>
+        </ul>
+        <ul class="main-nav__list user-list">
+          <li class="user-list__item">
+            <a class="user-list__link user-list__link--account" href="#">
+              <span class="visually-hidden">Личный кабинет</span>
+            </a>
+          </li>
+          <li class="user-list__item">
+            <a class="user-list__link user-list__link--basket" href="#">
+              <span class="visually-hidden">Корзина</span>
+            </a>
+          </li>
+        </ul>
+        <button class="main-nav__toogle js-toggle-button button">
+          <span class="visually-hidden">Меню</span>
+        </button>
+      </nav>
+    </header>
+    <main class="main-container">
+      <h1 class="visually-hidden">Drink2Go — интернет-магазин по продаже кофейных напитков</h1>
+      <section class="hero" data-test="hero">
+        <button class="hero__button hero__button--back button">
+          <span class="visually-hidden">Назад</span>
+        </button>
+        <div class="hero__container">
+          <div>
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)"
+                srcset="images/hero-desktop1x.webp 1x, images/hero-desktop2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="images/hero-tablet1x.webp 1x, images/hero-tablet2x.webp 2x">
+              <source type="image/webp" srcset="images/hero-mobile1x.webp 1x, images/hero-mobile2x.webp 2x">
+              <source media="(min-width: 1440px)" srcset="images/hero-desktop1x.png 1x, images/hero-desktop2x.png 2x"
+                width="600" height="600">
+              <source media="(min-width: 768px)" srcset="images/hero-tablet1x.png 1x, images/hero-tablet2x.png 2x"
+                width="476" height="476">
+              <img class="hero-image" src="images/hero-mobile1x.png" srcset="images/hero-mobile2x.png 2x" loading="lazy"
+                alt="Декаф Флэт Уайт." width="280" height="280">
+            </picture>
+          </div>
+          <h2 class="hero__title title">Новинка!</h2>
+          <p class="hero__text">Декаф Флэт Уайт</p>
+          <p class="hero__description">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то,
+            что нужно
+            для
+            расслабления
+            после
+            тяжёлого рабочего дня</p>
+          <div class="hero__wrapper">
+            <s class="hero__old-price">295₽</s>
+            <b class="hero__price">225₽</b>
+            <a class="hero__link">Заказать</a>
+          </div>
+        </div>
+        <button class="hero__button button">
+          <span class="visually-hidden">Вперед</span>
+        </button>
+      </section>
+      <section class="features" data-test="features">
+        <h2 class="features__title title">Преимущества</h2>
+        <p class="features__description">Главные причины выбрать Drink2Go</p>
+        <ul class="features__list">
+          <li class="features__item features__item--speed">
+            <h3 class="features__subtitle">Скорость</h3>
+            <p class="features__text">Готовый напиток всегда под рукой — просто открой банку</p>
+          </li>
+          <li class="features__item features__item--comfort">
+            <h3 class="features__subtitle">Удобство</h3>
+            <p class="features__text">Легко помещается и в карман,
+              и в маленькую сумочку</p>
+          </li>
+          <li class="features__item features__item--fresh">
+            <h3 class="features__subtitle">Бодрость</h3>
+            <p class="features__text">Сбалансированная доза кофеина даст мощный заряд энергии</p>
+          </li>
+          <li class="features__item features__item--eco">
+            <h3 class="features__subtitle">Экологичность</h3>
+            <p class="features__text">Вся упаковка сделана
+              из перерабатываемых материалов</p>
+          </li>
+        </ul>
+      </section>
+      <section class="catalog" data-test="catalog">
+        <h2>Каталог</h2>
+        <p>Каталог кофейных напитков</p>
+      </section>
+    </main>
+  </div>
+  <script src="js/script.js" defer></script>
+</body>
+
 </html>

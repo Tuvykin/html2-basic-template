@@ -2,6 +2,17 @@
 @import "global/variables";
 @import "global/global";
 @import "global/fonts";
+@import "global/mixins";
+@import "global/visually-hidden";
 
 /* BLOCKS */
-@import "blocks/header";
+@import "blocks/main-header";
+@import "blocks/container";
+@import "blocks/page";
+@import "blocks/title";
+@import "blocks/hero";
+@import "blocks/main-nav";
+@import "blocks/user-list";
+@import "blocks/nav-list";
+@import "blocks/button";
+@import "blocks/features";

@@ -1,0 +1,24 @@
+.container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  width: 320px;
+}
+
+@media (min-width: $tablet-width) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+    width: 1280px;
+    padding: 0 40px;
+  }
+
+  .container--design {
+    background-color: #e7e5e5;
+  }
+}
