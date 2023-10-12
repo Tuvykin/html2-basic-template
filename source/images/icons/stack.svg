@@ -35,4 +35,9 @@
   <path fill-rule="evenodd" clip-rule="evenodd" d="M0 1.19153L1.23899 0L5 3.61694L8.76101 0L10 1.19153L5 6L0 1.19153Z" fill="#7859CF"/>
 </svg>
 
+<svg id="icon-radio" viewBox="0 0 24 24">
+  <circle cx="12" cy="12" r="11" fill="white" stroke="#7859CF" stroke-width="2"/>
+  <circle cx="12" cy="12" r="8" fill="#7859CF"/>
+</svg>
+
 </svg>

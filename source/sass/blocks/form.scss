@@ -43,3 +43,51 @@
   margin-top: 20px;
 }
 
+.form__subtitle {
+  position: relative;
+}
+
+.form__control-mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  background-color: #bdbdbd;
+  border-radius: 50%;
+
+  &::after {
+    background-color: $white-color;
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+  }
+}
+
+.form__input[type="radio"]:checked + .form__control-mark::before {
+  background-image: url("../../images/icons/stack.svg#icon-radio");
+  background-repeat: no-repeat;
+  background-position: center;
+  content: "";
+  width: 24px;
+  height: 24px;
+  position: absolute;
+}
+
+.form__input[type="radio"]:checked + .form__control-mark::after {
+  display: none;
+}
+
+.form__control {
+  padding-left: 34px;
+}
+
+.form__control--checkbox {
+  padding-left: 52px;
+}
