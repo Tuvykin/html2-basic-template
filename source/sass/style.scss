@@ -7,9 +7,11 @@
 
 /* BLOCKS */
 @import "blocks/main-header";
+@import "blocks/main-footer";
 @import "blocks/container";
 @import "blocks/page";
-@import "blocks/title";
+@import "blocks/text";
+@import "blocks/heading";
 @import "blocks/hero";
 @import "blocks/main-nav";
 @import "blocks/user-list";
@@ -20,4 +22,5 @@
 @import "blocks/catalog";
 @import "blocks/form";
 @import "blocks/pagination";
+@import "blocks/logo";
 

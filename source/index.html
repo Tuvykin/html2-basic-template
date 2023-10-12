@@ -15,14 +15,12 @@
 <body class="page__body">
   <div class="container container--design">
     <header class="main-header" data-test="header">
-      <a class="main-header__logo">
-        <span class="main-header__logo-text">D<span
-            class="main-header__logo-text main-header__logo-text--desktop">rink</span></span>
-        <img class="main-header__logo-image" src="images/icon-logo.svg" alt="Логотип интернет-магазин
+      <a class="main-header__logo logo">
+        <span class="logo__text">D<span class="logo__text logo__text--header">rink</span></span>
+        <img class="logo__image" src="images/icon-logo.svg" alt="Логотип интернет-магазин
   кофейных напитков" width="32" height="36">
-        <span class="main-header__logo-text">G<span
-            class="main-header__logo-text main-header__logo-text--desktop">o</span></span>
-        <p class="main-header__logo-description">Интернет-магазин
+        <span class="logo__text">G<span class="logo__text logo__text--header">o</span></span>
+        <p class="logo__description">Интернет-магазин
           кофейных напитков</p>
       </a>
       <nav class="main-nav main-nav--closed">
@@ -60,75 +58,137 @@
     <main class="main-container">
       <h1 class="visually-hidden">Drink2Go — интернет-магазин по продаже кофейных напитков</h1>
       <section class="hero" data-test="hero">
-        <button class="hero__button hero__button--back button">
-          <span class="visually-hidden">Назад</span>
-        </button>
-        <div class="hero__container">
-          <div>
-            <picture>
-              <source type="image/webp" media="(min-width: 1440px)"
-                srcset="images/hero-desktop1x.webp 1x, images/hero-desktop2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)"
-                srcset="images/hero-tablet1x.webp 1x, images/hero-tablet2x.webp 2x">
-              <source type="image/webp" srcset="images/hero-mobile1x.webp 1x, images/hero-mobile2x.webp 2x">
-              <source media="(min-width: 1440px)" srcset="images/hero-desktop1x.png 1x, images/hero-desktop2x.png 2x"
-                width="600" height="600">
-              <source media="(min-width: 768px)" srcset="images/hero-tablet1x.png 1x, images/hero-tablet2x.png 2x"
-                width="476" height="476">
-              <img class="hero__image" src="images/hero-mobile1x.png" srcset="images/hero-mobile2x.png 2x"
-                loading="lazy" alt="Декаф Флэт Уайт." width="280" height="280">
-            </picture>
+        <div class="hero__button-wrapper">
+          <button class="hero__button hero__button--back button">
+            <span class="visually-hidden">Назад</span>
+          </button>
+          <button class="hero__button hero__button--up button">
+            <span class="visually-hidden">Вперед</span>
+          </button>
+        </div>
+        <div class="hero__slider">
+          <div class="hero__container hero__container--flat-white hero__container--active">
+            <div>
+              <picture>
+                <source type="image/webp" media="(min-width: 1440px)"
+                  srcset="images/flat-white-desktop1x.webp 1x, images/flat-white-desktop2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="images/flat-white-tablet1x.webp 1x, images/flat-white-tablet2x.webp 2x">
+                <source type="image/webp"
+                  srcset="images/flat-white-mobile1x.webp 1x, images/flat-white-mobile2x.webp 2x">
+                <source media="(min-width: 1440px)"
+                  srcset="images/flat-white-desktop1x.png 1x, images/flat-white-desktop2x.png 2x" width="600"
+                  height="600">
+                <source media="(min-width: 768px)"
+                  srcset="images/flat-white-tablet1x.png 1x, images/flat-white-tablet2x.png 2x" width="476"
+                  height="476">
+                <img class="hero__image" src="images/flat-white-mobile1x.png" srcset="images/flat-white-mobile2x.png 2x"
+                  loading="lazy" alt="Декаф Флэт Уайт." width="280" height="280">
+              </picture>
+            </div>
+            <span class="hero__text">Новинка!</span>
+            <h2 class="hero__title">Декаф Флэт Уайт</h2>
+            <p class="hero__description">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком —
+              то,
+              что нужно
+              для
+              расслабления
+              после
+              тяжёлого рабочего дня</p>
+            <div class="hero__wrapper">
+              <s class="hero__old-price">295₽</s>
+              <b class="hero__price">225₽</b>
+              <a class="hero__link">Заказать</a>
+            </div>
           </div>
-          <h2 class="hero__title title">Новинка!</h2>
-          <p class="hero__text">Декаф Флэт Уайт</p>
-          <p class="hero__description">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то,
-            что нужно
-            для
-            расслабления
-            после
-            тяжёлого рабочего дня</p>
-          <div class="hero__wrapper">
-            <s class="hero__old-price">295₽</s>
-            <b class="hero__price">225₽</b>
-            <a class="hero__link">Заказать</a>
+          <div class="hero__container hero__container--latte">
+            <div>
+              <picture>
+                <source type="image/webp" media="(min-width: 1440px)"
+                  srcset="images/latte-desktop1x.webp 1x, images/latte-desktop2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="images/latte-tablet1x.webp 1x, images/latte-tablet2x.webp 2x">
+                <source type="image/webp" srcset="images/latte-mobile1x.webp 1x, images/latte-mobile2x.webp 2x">
+                <source media="(min-width: 1440px)"
+                  srcset="images/latte-desktop1x.png 1x, images/latte-desktop2x.png 2x" width="600" height="600">
+                <source media="(min-width: 768px)" srcset="images/latte-tablet1x.png 1x, images/latte-tablet2x.png 2x"
+                  width="476" height="476">
+                <img class="hero__image" src="images/latte-mobile1x.png" srcset="images/latte-mobile2x.png 2x"
+                  loading="lazy" alt="Лавандовый Латте." width="280" height="280">
+              </picture>
+            </div>
+            <span class="hero__text">Новинка!</span>
+            <h2 class="hero__title">Лавандовый Латте</h2>
+            <p class="hero__description">Невероятное сочетание перуанской высокогорной арабики с молоком ламы и
+              лавандовым сиропом унесёт вас прямо на вершину
+              Радужных гор</p>
+            <div class="hero__wrapper">
+              <s class="hero__old-price">285₽</s>
+              <b class="hero__price">265₽</b>
+              <a class="hero__link">Заказать</a>
+            </div>
+          </div>
+          <div class="hero__container hero__container--espresso">
+            <div>
+              <picture>
+                <source type="image/webp" media="(min-width: 1440px)"
+                  srcset="images/espresso-desktop1x.webp 1x, images/espresso-desktop2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="images/espresso-tablet1x.webp 1x, images/espresso-tablet2x.webp 2x">
+                <source type="image/webp" srcset="images/espresso-mobile1x.webp 1x, images/espresso-mobile2x.webp 2x">
+                <source media="(min-width: 1440px)"
+                  srcset="images/espresso-desktop1x.png 1x, images/espresso-desktop2x.png 2x" width="600" height="600">
+                <source media="(min-width: 768px)"
+                  srcset="images/espresso-tablet1x.png 1x, images/espresso-tablet2x.png 2x" width="476" height="476">
+                <img class="hero__image" src="images/espresso-mobile1x.png" srcset="images/espresso-mobile2x.png 2x"
+                  loading="lazy" alt="Тройной Эспрессо." width="280" height="280">
+              </picture>
+            </div>
+            <span class="hero__text">Новинка!</span>
+            <h2 class="hero__title">Тройной Эспрессо</h2>
+            <p class="hero__description">Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из
+              Колумбии покажет вам, что такое настоящая
+              бодрость</p>
+            <div class="hero__wrapper">
+              <s class="hero__old-price">395₽</s>
+              <b class="hero__price">375₽</b>
+              <a class="hero__link">Заказать</a>
+            </div>
           </div>
         </div>
-        <button class="hero__button button">
-          <span class="visually-hidden">Вперед</span>
-        </button>
       </section>
       <section class="features" data-test="features">
-        <h2 class="features__title title">Преимущества</h2>
-        <p class="features__description">Главные причины выбрать Drink2Go</p>
+        <span class="features__text text">Преимущества</span>
+        <h2 class="features__heading heading ">Главные причины выбрать Drink2Go</h2>
         <ul class="features__list">
           <li class="features__item features__item--speed">
             <h3 class="features__subtitle">Скорость</h3>
-            <p class="features__text">Готовый напиток всегда под рукой — просто открой банку</p>
+            <p class="features__description">Готовый напиток всегда под рукой — просто открой банку</p>
           </li>
           <li class="features__item features__item--comfort">
             <h3 class="features__subtitle">Удобство</h3>
-            <p class="features__text">Легко помещается и в карман,
+            <p class="features__description">Легко помещается и в карман,<br>
               и в маленькую сумочку</p>
           </li>
           <li class="features__item features__item--fresh">
             <h3 class="features__subtitle">Бодрость</h3>
-            <p class="features__text">Сбалансированная доза кофеина даст мощный заряд энергии</p>
+            <p class="features__description">Сбалансированная доза кофеина даст мощный заряд энергии</p>
           </li>
           <li class="features__item features__item--eco">
             <h3 class="features__subtitle">Экологичность</h3>
-            <p class="features__text">Вся упаковка сделана
+            <p class="features__description">Вся упаковка сделана<br>
               из перерабатываемых материалов</p>
           </li>
         </ul>
       </section>
       <section class="catalog" data-test="catalog">
-        <h2 class="catalog__title title">Каталог</h2>
-        <p class="catalog__description">Каталог кофейных напитков</p>
+        <span class="catalog__text text">Каталог</span>
+        <h2 class="catalog__heading heading">Каталог кофейных напитков</h2>
         <form class="catalog__form form" action="https://echo.htmlacademy.ru/" method="post" target="_blank">
           <fieldset class="form__group">
             <legend class="form__title">Цена</legend>
             <div class="form__wrapper">
-              <div class="form__wrapper-inputs">
+              <div class="form__wrapper-input">
                 <label class="form__subtitle">
                   <input class="range-input range-input-min" type="text" name="price-min" placeholder="0">
                 </label>
@@ -173,7 +233,7 @@
               </li>
               <li class="form__item">
                 <label class="form__subtitle">
-                  <input class="visually-hidden form__input" type="radio" name="milk" value="without">
+                  <input class="visually-hidden form__input" type="radio" name="milk" value="without" disabled>
                   <span class="form__control-mark"></span>
                   <span class="form__control">Без молока</span>
                 </label>
@@ -186,36 +246,36 @@
               <li class="form__item">
                 <label class="form__subtitle">
                   <input class="visually-hidden form__input" type="checkbox" name="Brazil" checked>
-                  <span class="form__control-mark"></span>
-                  <span class="form__control">Бразилия</span>
+                  <span class="form__control-mark form__control-mark--checkbox"></span>
+                  <span class="form__control form__control--checkbox">Бразилия</span>
                 </label>
               </li>
               <li class="form__item">
                 <label class="form__subtitle">
                   <input class="visually-hidden form__input" type="checkbox" name="Ethiopia">
-                  <span class="form__control-mark"></span>
-                  <span class="form__control">Эфиопия</span>
+                  <span class="form__control-mark form__control-mark--checkbox"></span>
+                  <span class="form__control form__control--checkbox">Эфиопия</span>
                 </label>
               </li>
               <li class="form__item">
                 <label class="form__subtitle">
                   <input class="visually-hidden form__input" type="checkbox" name="Colombia">
-                  <span class="form__control-mark"></span>
-                  <span class="form__control">Колумбия</span>
+                  <span class="form__control-mark form__control-mark--checkbox"></span>
+                  <span class="form__control form__control--checkbox">Колумбия</span>
                 </label>
               </li>
               <li class="form__item">
                 <label class="form__subtitle">
                   <input class="visually-hidden form__input" type="checkbox" name="Costa Rica">
-                  <span class="form__control-mark"></span>
-                  <span class="form__control">Коста-Рика</span>
+                  <span class="form__control-mark form__control-mark--checkbox"></span>
+                  <span class="form__control form__control--checkbox">Коста-Рика</span>
                 </label>
               </li>
               <li class="form__item">
                 <label class="form__subtitle">
-                  <input class="visually-hidden form__input" type="checkbox" name="Peru">
-                  <span class="form__control-mark"></span>
-                  <span class="form__control">Перу</span>
+                  <input class="visually-hidden form__input" type="checkbox" name="Peru" disabled>
+                  <span class="form__control-mark form__control-mark--checkbox"></span>
+                  <span class="form__control form__control--checkbox">Перу</span>
                 </label>
               </li>
             </ul>
@@ -229,9 +289,8 @@
           <span class="catalog__sorting-text">Сортировка:</span>
           <select class="catalog__sorting-filter" aria-label="Сортировка">
             <option value="default" selected>по умолчанию</option>
-            <option value="cheap">сначала дешевые</option>
-            <option value="expensive">сначала дорогие</option>
-            <option value="popular">сначала популярное</option>
+            <option value="cheap">дешевые</option>
+            <option value="expensive">дорогие</option>
           </select>
         </div>
         <ul class="catalog__list card-list">
@@ -352,12 +411,14 @@
     <footer class="main-footer" data-test="footer">
       <h2 class="visually-hidden">Информация о нас</h2>
       <div class="main-footer__wrapper">
-        <a class="main-footer__logo">
-          <span class="main-footer__text">D<span class="main-footer__logo-text">rink</span></span>
-          <img class="main-footer__image" src="images/icon-logo.svg" alt="Логотип интернет-магазин
+        <a class="main-footer__logo logo">
+          <span class="logo__text logo__text--footer">D<span
+              class="logo__text logo__text--footer-tablet">rink</span></span>
+          <img class="logo__image" src="images/icon-logo.svg" alt="Логотип интернет-магазин
                 кофейных напитков" width="32" height="36">
-          <span class="main-footer__text">G<span class="main-footer__logo-text">o</span></span>
-          <p class="main-footer__description">Интернет-магазин
+          <span class="logo__text logo__text--footer">G<span
+              class="logo__text logo__text--footer-tablet">o</span></span>
+          <p class="logo__description">Интернет-магазин
             кофейных напитков</p>
         </a>
         <ul class="main-footer__social-list">

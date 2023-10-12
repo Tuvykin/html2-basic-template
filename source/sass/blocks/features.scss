@@ -1,14 +1,5 @@
 .features {
-  padding: 50px 20px 60px;
-}
-
-.features__description {
-  margin: 0;
-  margin-bottom: 36px;
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 36px;
-  text-transform: none;
+  padding: 50px 20px 28px;
 }
 
 .features__list {
@@ -25,7 +16,7 @@
   padding-top: 66px;
 }
 
-.features__text {
+.features__description {
   font-size: 14px;
   line-height: 20px;
   margin: 0;
@@ -38,8 +29,8 @@
   &::before {
     background-repeat: no-repeat;
     content: "";
-    background-size: 50px 56px;
     background-position: center;
+    background-size: 52px 56px;
     display: block;
     width: 50px;
     height: 56px;
@@ -54,14 +45,14 @@
   background-image: url("../../images/icons/stack.svg#icon-speed");
 }
 
-// .features__item--comfort::before {
-//   background-image: url("../../images/icons/stack.svg#icon-comfort");
-// }
+.features__item--comfort::before {
+  background-image: url("../../images/icons/stack.svg#icon-comfort");
+}
 
-// .features__item--fresh::before {
-//   background-image: url("../../images/icons/stack.svg#icon-fresh");
-// }
+.features__item--fresh::before {
+  background-image: url("../../images/icons/stack.svg#icon-fresh");
+}
 
-// .features__item--eco::before {
-//   background-image: url("../../images/icons//stack.svg#icon-eco");
-// }
+.features__item--eco::before {
+  background-image: url("../../images/icons/stack.svg#icon-eco");
+}

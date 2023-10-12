@@ -1,0 +1,37 @@
+.logo {
+  display: flex;
+  align-items: center;
+  padding-top: 27px;
+  padding-bottom: 29px;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 24px;
+}
+
+.logo__text,
+.logo__description {
+  display: none;
+}
+
+.logo__text--footer {
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .logo__text,
+  .logo__text--footer-tablet {
+    display: block;
+  }
+
+
+  .logo__text--header {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logo__text--header,
+  .logo__description {
+    display: block;
+  }
+}
