@@ -102,3 +102,45 @@
 .form__control--checkbox {
   padding-left: 52px;
 }
+
+.form__wrapper-input {
+  display: flex;
+  gap: 44px;
+  position: relative;
+  padding-top: 48px;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 8px;
+    height: 2px;
+    background-color: #bdbdbd;
+    position: absolute;
+    top: 78%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  & .form__input {
+    width: 118px;
+    height: 40px;
+    border-radius: 4px;
+    border: 2px solid #9070ec;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: $main-font;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+  }
+}
+
+.form__input::placeholder {
+  padding: 8px 10px;
+  text-align: center;
+}
+
+.form__input--max::placeholder {
+  color: #333333;
+}

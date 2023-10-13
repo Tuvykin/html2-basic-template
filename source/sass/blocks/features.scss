@@ -27,8 +27,8 @@
   position: relative;
 
   &::before {
-    background-repeat: no-repeat;
     content: "";
+    background-repeat: no-repeat;
     background-position: center;
     background-size: 52px 56px;
     display: block;

@@ -1,22 +1,19 @@
 .nav-list {
   @include list-reset;
-  width: 320px;
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .nav-list__item {
   min-height: 57px;
 
   &:first-child .nav-list__link {
-    border-top: 1px solid var(--base-secondary, #f0ebff);
+    border-top: 1px solid #f0ebff;
   }
 }
 
 .nav-list__link {
   padding: 20px;
   display: block;
-  border-bottom: 1px solid var(--base-secondary, #f0ebff);
+  border-bottom: 1px solid #f0ebff;
   font-size: 12px;
   line-height: 16px;
 }

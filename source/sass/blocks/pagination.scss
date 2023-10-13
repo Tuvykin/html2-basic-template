@@ -25,7 +25,7 @@
 }
 
 .pagination__link--arrow::after {
-  background-color: #7859cf;
+  background-color: $base-color;
   content: "";
   width: 6px;
   display: block;
