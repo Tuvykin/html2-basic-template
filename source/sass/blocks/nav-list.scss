@@ -1,6 +1,8 @@
 .nav-list {
   @include list-reset;
   width: 320px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .nav-list__item {

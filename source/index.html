@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <title>DRINK2GO</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="vendor/nouislider/nouislider.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="fonts/Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
@@ -50,7 +51,7 @@
             </a>
           </li>
         </ul>
-        <button class="main-nav__toogle js-toggle-button button">
+        <button class="main-nav__toogle js-toggle-button button" type="button">
           <span class="visually-hidden">Меню</span>
         </button>
       </nav>
@@ -59,10 +60,10 @@
       <h1 class="visually-hidden">Drink2Go — интернет-магазин по продаже кофейных напитков</h1>
       <section class="hero" data-test="hero">
         <div class="hero__button-wrapper">
-          <button class="hero__button hero__button--back button">
+          <button class="hero__button hero__button--back button" type="button">
             <span class="visually-hidden">Назад</span>
           </button>
-          <button class="hero__button hero__button--up button">
+          <button class="hero__button hero__button--up button" type="button">
             <span class="visually-hidden">Вперед</span>
           </button>
         </div>
@@ -197,15 +198,7 @@
                 </label>
               </div>
               <div class="range-scale">
-                <div class="range-bar"></div>
-                <button class="range-toggle toggle-min" type="button">
-                  <span class="visually-hidden">Изменить минимальную цену.</span>
-                </button>
-                <button class="range-toggle toggle-max" type="button">
-                  <span class="visually-hidden">Изменить максимальную цену.</span>
-                </button>
               </div>
-            </div>
           </fieldset>
           <fieldset class="form__group">
             <legend class="form__title">Наличие молока</legend>
@@ -306,7 +299,7 @@
             <p class="card-list__description">Кофе без кофеина из Эфиопии
               с натуральным фермерским молоком</p>
             <span class="card-list__price">225₽</span>
-            <button class="card-list__button button">В корзину</button>
+            <button class="card-list__button button" type="button">В корзину</button>
           </li>
           <li class="card-list__item">
             <div class="card-list__wrapper">
@@ -320,7 +313,7 @@
             <p class="card-list__description">Кофе без кофеина из Эфиопии
               с натуральным фермерским молоком</p>
             <span class="card-list__price">225₽</span>
-            <button class="card-list__button button">В корзину</button>
+            <button class="card-list__button button" type="button">В корзину</button>
           </li>
           <li class="card-list__item">
             <div class="card-list__wrapper">
@@ -334,7 +327,7 @@
             <p class="card-list__description">Кофе без кофеина из Эфиопии
               с натуральным фермерским молоком</p>
             <span class="card-list__price">225₽</span>
-            <button class="card-list__button button">В корзину</button>
+            <button class="card-list__button button" type="button">В корзину</button>
           </li>
           <li class="card-list__item">
             <div class="card-list__wrapper">
@@ -348,7 +341,7 @@
             <p class="card-list__description">Кофе без кофеина из Эфиопии
               с натуральным фермерским молоком</p>
             <span class="card-list__price">225₽</span>
-            <button class="card-list__button button">В корзину</button>
+            <button class="card-list__button button" type="button">В корзину</button>
           </li>
           <li class="card-list__item">
             <div class="card-list__wrapper">
@@ -362,7 +355,7 @@
             <p class="card-list__description">Кофе без кофеина из Эфиопии
               с натуральным фермерским молоком</p>
             <span class="card-list__price">225₽</span>
-            <button class="card-list__button button">В корзину</button>
+            <button class="card-list__button button" type="button">В корзину</button>
           </li>
           <li class="card-list__item">
             <div class="card-list__wrapper">
@@ -376,7 +369,7 @@
             <p class="card-list__description">Кофе без кофеина из Эфиопии
               с натуральным фермерским молоком</p>
             <span class="card-list__price">225₽</span>
-            <button class="card-list__button button">В корзину</button>
+            <button class="card-list__button button" type="button">В корзину</button>
           </li>
         </ul>
         <div class="catalog__pagination-container pagination">
@@ -459,6 +452,7 @@
       </a>
     </footer>
   </div>
+  <script src="vendor/nouislider/nouislider.js"></script>
   <script src="js/script.js" defer></script>
 </body>
 
