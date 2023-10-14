@@ -78,7 +78,7 @@
   border-radius: 4px;
   background-color: $base-color;
   color: $white-color;
-  padding: 8px 20px;
+  padding: 10px 20px;
   text-transform: none;
 }
 
@@ -109,4 +109,56 @@
 
 .hero__button-wrapper {
   position: relative;
+}
+
+.hero__transfer {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .hero {
+    width: 768px;
+  }
+
+  .hero__container {
+    position: relative;
+    width: 768px;
+    padding: 55px 20px 308px;
+    min-height: 640px;
+  }
+
+  .hero__container-image {
+    position: absolute;
+    top: 55%;
+    left: 19%;
+  }
+
+  .hero__title {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 80px;
+    margin-bottom: 16px;
+    letter-spacing: 1.12px;
+  }
+
+  .hero__description {
+    font-size: 20px;
+    line-height: 32px;
+    width: 608px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+  }
+
+  .hero__button {
+    width: 80px;
+    min-height: 640px;
+
+    &::after {
+      left: 40px;
+    }
+  }
+
+  .hero__transfer {
+    display: block;
+  }
 }

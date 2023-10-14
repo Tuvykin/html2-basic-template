@@ -1,9 +1,8 @@
 .logo {
-  display: flex;
-  align-items: center;
   font-size: 24px;
   font-weight: 800;
   line-height: 24px;
+  height: 36px;
 }
 
 .logo__text,
@@ -16,6 +15,16 @@
 }
 
 @media (min-width: $tablet-width) {
+  .logo {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+  }
+
+  .logo__image {
+    height: 36px;
+  }
+
   .logo__text,
   .logo__text--footer-tablet {
     display: block;

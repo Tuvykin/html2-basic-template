@@ -1,8 +1,27 @@
-.copyright__description {
+.copyright {
+  padding: 20px 37px 30px;
+  display: flex;
+  min-width: 206px;
+}
+
+.copyright__text {
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
   line-height: 16px;
   color: #bdbdbd;
   text-transform: none;
+  text-decoration: none;
+  display: block;
+  min-width: 91px;
+  margin-right: 3px;
+}
+
+.copyright__link {
+  text-decoration: none;
+  display: flex;
+
+  & .copyright__text {
+    margin-right: 4px;
+  }
 }

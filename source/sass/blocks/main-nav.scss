@@ -78,4 +78,10 @@
   .main-nav__toogle {
     display: none;
   }
+
+  .main-nav__list {
+    max-width: 399px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 }

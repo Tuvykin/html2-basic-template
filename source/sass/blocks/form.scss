@@ -22,7 +22,7 @@
   @include list-reset;
 }
 
-.form__item {
+.form__item:not(:last-of-type) {
   margin-bottom: 20px;
 }
 
@@ -107,7 +107,6 @@
   display: flex;
   gap: 44px;
   position: relative;
-  padding-top: 48px;
 
   &::after {
     content: "";
@@ -116,7 +115,7 @@
     height: 2px;
     background-color: #bdbdbd;
     position: absolute;
-    top: 78%;
+    top: 53%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -143,4 +142,46 @@
 
 .form__input--max::placeholder {
   color: #333333;
+}
+
+.form__slider {
+  height: 24px;
+  margin-bottom: 24px;
+}
+
+@media (min-width: $tablet-width) {
+  .form {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 40px;
+  }
+
+  .form__wrapper-input .form__input {
+    width: 87px;
+  }
+
+  .form__button {
+    width: 137px;
+    min-height: 40px;
+  }
+
+  .form__button-wrapper {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .form__slider {
+    margin-bottom: 20px;
+  }
+
+  .form__wrapper-input {
+    gap: 48px;
+  }
+
+  .form__button--reset {
+    margin: 0;
+    width: 120px;
+  }
 }

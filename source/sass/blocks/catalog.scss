@@ -3,10 +3,15 @@
   padding: 50px 20px 44px;
 }
 
+.catalog__heading {
+  margin-bottom: 20px;
+}
+
 .catalog__sorting-text {
   font-weight: 600;
   text-transform: none;
   margin-right: 8px;
+  margin-left: 3px;
 }
 
 .catalog__sorting-wrapper {
@@ -19,14 +24,35 @@
   width: 165px;
   border: none;
   appearance: none;
-  padding: 10px;
+  padding: 4px 10px;
   padding-right: 30px;
   font-family: $main-font;
+  font-size: 16px;
   font-weight: 600;
+  line-height: 24px;
   color: $base-color;
   background-color: inherit;
   background-image: url("../../images/icons/stack.svg#icon-sorting-arrow");
   background-repeat: no-repeat;
-  background-position: right 20px center;
+  background-position: right 8px center;
   background-size: 10px 6px;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog {
+    padding: 80px 20px 90px;
+  }
+
+  .catalog__sorting-filter {
+    margin-left: 0;
+    background-position: right 10px center;
+  }
+
+  .catalog__sorting-wrapper {
+    justify-content: flex-end;
+  }
+
+  .catalog__sorting-text {
+    margin-right: 10px;
+  }
 }

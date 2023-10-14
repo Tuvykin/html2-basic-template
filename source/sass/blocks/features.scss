@@ -2,6 +2,10 @@
   padding: 50px 20px 28px;
 }
 
+.features__heading {
+  margin-bottom: 36px;
+}
+
 .features__list {
   @include list-reset;
   text-transform: none;
@@ -13,7 +17,6 @@
   line-height: 32px;
   margin: 0;
   margin-bottom: 4px;
-  padding-top: 66px;
 }
 
 .features__description {
@@ -25,6 +28,8 @@
 
 .features__item {
   position: relative;
+  padding-top: 66px;
+
 
   &::before {
     content: "";
@@ -55,4 +60,46 @@
 
 .features__item--eco::before {
   background-image: url("../../images/icons/stack.svg#icon-eco");
+}
+
+@media (min-width: $tablet-width) {
+  .features {
+    padding: 232px 20px 100px;
+  }
+
+  .features__list {
+    display: grid;
+    row-gap: 50px;
+    column-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .features__item {
+    width: 339px;
+    padding: 0;
+    padding-left: 82px;
+    min-height: 94px;
+    text-align: left;
+  }
+
+  .features__item::before {
+    top: 32px;
+    left: 36px;
+  }
+
+  .features__subtitle {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 10px;
+  }
+
+  .features__description {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+  }
+
+  .features__heading {
+    margin-bottom: 60px;
+  }
 }

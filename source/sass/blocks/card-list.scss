@@ -9,6 +9,10 @@
   background-color: $white-color;
   padding: 40px 20px 20px 18px;
   margin-bottom: 20px;
+
+  &:last-of-type {
+    margin: 0;
+  }
 }
 
 .card-list__subtitle {
@@ -22,6 +26,8 @@
 .card-list__description {
   margin: 0;
   margin-bottom: 16px;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .card-list__price {
@@ -61,4 +67,37 @@
 .card-list__image {
   margin: 0 auto;
   display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .card-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding: 27px 0 70px;
+  }
+
+  .card-list__item {
+    padding: 30px;
+    padding-top: 50px;
+    margin: 0;
+  }
+
+  .card-list__subtitle {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 10px;
+  }
+
+  .card-list__description {
+    margin-bottom: 20px;
+  }
+
+  .card-list__wrapper {
+    margin-bottom: 30px;
+  }
+
+  .card-list__price {
+    margin-right: 93px;
+  }
 }

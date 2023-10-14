@@ -38,10 +38,10 @@
 
   .nav-list__link--current::after {
     position: absolute;
-    bottom: -1px;
+    bottom: 0;
     height: 2px;
     left: 0;
-    right: 0;
+    right: -2px;
     background-color: $base-color;
     content: "";
   }

@@ -43,3 +43,33 @@
 .pagination__link--arrow-up::after {
   mask-image: url("../../images/icons/stack.svg#icon-pagination-up");
 }
+
+.pagination__text {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .pagination__list {
+    width: 395px;
+    margin-left: auto;
+  }
+
+  .pagination__text {
+    display: block;
+  }
+
+  .pagination__link--arrow {
+    padding: 8px 20px;
+    width: 91px;
+    text-transform: none;
+    color: $base-color;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .pagination__link--arrow-up {
+    width: 104px;
+  }
+}
