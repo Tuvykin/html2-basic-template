@@ -17,14 +17,19 @@
 <body class="page__body">
   <div class="container">
     <header class="main-header" data-test="header">
-      <a class="main-header__logo logo">
-        <span class="logo__text">D<span class="logo__text logo__text--header">rink</span></span>
-        <img class="logo__image" src="images/icon-logo.svg" alt="Логотип интернет-магазин
-  кофейных напитков" width="32" height="36">
-        <span class="logo__text">G<span class="logo__text logo__text--header">o</span></span>
-        <p class="logo__description">Интернет-магазин
-          кофейных напитков</p>
+      <a class="main-header__logo">
+        <div class="main-header__wrapper">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="images/icon-logo-long.svg" width="170" height="36">
+            <source media="(min-width: 768px)" srcset="images/icon-logo-short.svg" width="82" height="36">
+            <img class="main-header__image" src="images/icon-logo.svg""
+                            loading=" lazy" alt="Логотип интернет-магазин
+                    кофейных напитко" width="32" height="36">
+          </picture>
+        </div>
       </a>
+      <p class="main-header__description">Интернет-магазин
+        кофейных напитков</p>
       <nav class="main-nav main-nav--closed">
         <ul class="main-nav__list nav-list">
           <li class="nav-list__item">
@@ -434,13 +439,15 @@
     <footer class="main-footer" data-test="footer">
       <h2 class="visually-hidden">Мы в социальных сетях</h2>
       <div class="main-footer__wrapper">
-        <a class="main-footer__logo logo">
-          <span class="logo__text logo__text--footer">D<span
-              class="logo__text logo__text--footer-tablet">rink</span></span>
-          <img class="logo__image" src="images/icon-logo.svg" alt="Логотип интернет-магазин
-                кофейных напитков" width="32" height="36">
-          <span class="logo__text logo__text--footer">G<span
-              class="logo__text logo__text--footer-tablet">o</span></span>
+        <a class="main-footer__logo">
+          <div class="main-footer__container">
+            <picture>
+              <source media="(min-width: 768px)" srcset="images/icon-logo-long.svg" width="170" height="36">
+              <img class="main-header__image" src="images/icon-logo-short.svg""
+                                      loading=" lazy" alt="Логотип интернет-магазин
+                              кофейных напитко" width="82" height="36">
+            </picture>
+          </div>
         </a>
         <p class="main-footer__text">Интернет-магазин
           кофейных напитков</p>

@@ -20,14 +20,17 @@
   &:hover,
   &:focus {
     background-color: $hover-color;
+    color: $white-color;
   }
 
   &:active {
     background-color: $active-color;
+    color: $white-color;
   }
 
   &:disabled {
     background-color: #e2e2e2;
+    color: $white-color;
   }
 }
 
@@ -47,6 +50,15 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.pagination__link--arrow {
+  &:hover::after,
+  &:focus::after,
+  &:active::after,
+  &:disabled::after {
+    background-color: $white-color;
+  }
 }
 
 .pagination__link--arrow-back::after {

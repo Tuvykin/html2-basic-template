@@ -58,14 +58,17 @@
   &:hover,
   &:focus {
     background-color: $hover-color;
+    color: $white-color;
   }
 
   &:active {
     background-color: $active-color;
+    color: $white-color;
   }
 
   &:disabled {
     background-color: #e2e2e2;
+    color: $white-color;
   }
 }
 

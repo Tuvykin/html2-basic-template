@@ -9,20 +9,31 @@
   font-style: normal;
   font-weight: 400;
   line-height: 16px;
-  color: #bdbdbd;
   text-transform: none;
   text-decoration: none;
   display: block;
   min-width: 91px;
   margin-right: 3px;
+  color: #bdbdbd;
 }
 
 .copyright__link {
   text-decoration: none;
   display: flex;
+  color: #bdbdbd;
+
 
   & .copyright__text {
     margin-right: 4px;
+  }
+
+  &:hover .copyright__text,
+  &:focus .copyright__text {
+    color: $base-color;
+  }
+
+  &:active .copyright__text {
+    color: #593cac;
   }
 }
 
