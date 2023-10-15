@@ -20,7 +20,7 @@
 
 @media (min-width: $tablet-width) {
   .nav-list {
-    width: 600px;
+    max-width: 399px;
   }
 
   .nav-list__link,
@@ -29,20 +29,28 @@
   }
 
   .nav-list__link {
-    padding: 32px 20px;
+    padding: 32px 21px;
   }
 
   .nav-list__link--current {
     position: relative;
-  }
+    padding-left: 22px;
 
-  .nav-list__link--current::after {
-    position: absolute;
-    bottom: 0;
-    height: 2px;
-    left: 0;
-    right: -2px;
-    background-color: $base-color;
-    content: "";
+    &::after {
+      position: absolute;
+      bottom: 0;
+      height: 2px;
+      left: 0;
+      right: 0;
+      background-color: $base-color;
+      content: "";
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .nav-list {
+    max-width: 460px;
+    gap: 20px;
   }
 }

@@ -35,3 +35,17 @@
     width: 768px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .map__image {
+    width: 1440px;
+  }
+
+  .map {
+    height: 540px;
+  }
+
+  .map__container::after {
+    left: 51%;
+  }
+}

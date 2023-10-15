@@ -56,3 +56,27 @@
     margin-right: 10px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .catalog {
+    padding: 100px 40px 120px;
+    display: grid;
+    grid-template-columns: 318px 1fr;
+    grid-template-rows: 20px 64px 36px 32px auto 40px;
+    min-height: 1448px;
+    column-gap: 30px;
+  }
+
+  .catalog__text {
+    grid-column: 1 / -1;
+  }
+
+  .catalog__heading {
+    grid-column: 1 / -1;
+  }
+
+  .catalog__sorting-wrapper {
+    grid-column: 2 / -1;
+    grid-row: 4 / 5;
+  }
+}

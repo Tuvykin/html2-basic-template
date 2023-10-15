@@ -32,9 +32,47 @@
   mask-image: url("../../images/icons/stack.svg#icon-basket");
 }
 
+.user-list__text {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .user-list__link {
     padding: 32px 22px;
     height: 80px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-list {
+    width: 261px;
+    gap: 20px;
+  }
+
+  .user-list__text {
+    display: block;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.24px;
+    color: #333333;
+  }
+
+  .user-list__link {
+    text-decoration: none;
+    padding: 32px 20px 32px 44px;
+    width: 112px;
+
+    &::after {
+      left: 25%;
+    }
+  }
+
+  .user-list__link--basket {
+    width: 129px;
+
+    &::after {
+      left: 22%;
+    }
   }
 }

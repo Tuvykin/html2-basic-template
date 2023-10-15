@@ -22,3 +22,10 @@
     display: block;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .main-header {
+    padding: 0 40px;
+  }
+}
+

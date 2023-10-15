@@ -115,6 +115,10 @@
   display: none;
 }
 
+.hero__container-image {
+  margin-bottom: 5px;
+}
+
 @media (min-width: $tablet-width) {
   .hero {
     width: 768px;
@@ -122,7 +126,7 @@
 
   .hero__container {
     position: relative;
-    width: 768px;
+    width: 100%;
     padding: 55px 20px 308px;
     min-height: 640px;
   }
@@ -164,5 +168,35 @@
 
   .hero__image {
     width: 476px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hero {
+    width: 1440px;
+    text-align: left;
+  }
+
+  .hero__container-image {
+    left: 105px;
+    top: 30px;
+  }
+
+  .hero__image {
+    width: 600px;
+  }
+
+  .hero__container {
+    padding: 175px 80px 242px 735px;
+    min-height: 714px;
+  }
+
+  .hero__description {
+    margin: 0;
+    margin-bottom: 44px;
+  }
+
+  .hero__button::after {
+    top: 56%;
   }
 }

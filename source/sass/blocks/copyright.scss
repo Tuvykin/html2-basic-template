@@ -33,3 +33,9 @@
     margin: 0 auto;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .copyright {
+    grid-column: 1 / -1;
+  }
+}

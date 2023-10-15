@@ -73,3 +73,10 @@
     width: 104px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .pagination {
+    grid-row: -2 / -1;
+    grid-column: 2 / -1;
+  }
+}

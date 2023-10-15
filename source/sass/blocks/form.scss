@@ -185,3 +185,31 @@
     width: 120px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .form {
+    grid-template-columns: 1fr;
+    padding-top: 5px;
+    row-gap: 30px;
+    margin: 0;
+    grid-row: 4 / -2;
+    max-height: 714px;
+  }
+
+  .form__button {
+    width: 149px;
+  }
+
+  .form__button-wrapper {
+    padding-top: 10px;
+  }
+
+  .form__wrapper-input .form__input {
+    width: 134px;
+  }
+
+  .form__wrapper-input {
+    gap: 50px;
+  }
+}
+

@@ -103,3 +103,30 @@
     margin-bottom: 60px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .features {
+    padding: 100px 40px 120px;
+  }
+
+  .features__list {
+    column-gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .features__item {
+    width: 318px;
+    padding: 0;
+    padding-top: 76px;
+    min-height: 170px;
+    text-align: center;
+
+    &::before {
+      left: 50%;
+    }
+  }
+
+  .features__heading {
+    margin-bottom: 80px;
+  }
+}

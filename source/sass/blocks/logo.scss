@@ -36,8 +36,20 @@
 }
 
 @media (min-width: $desktop-width) {
-  .logo__text--header,
+  .logo__text--header {
+    display: block;
+  }
+
   .logo__description {
     display: block;
+    margin: 0;
+    padding: 24px 0;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    width: 126px;
+    text-transform: none;
+    margin-left: 20px;
+    text-align: left;
   }
 }
