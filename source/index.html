@@ -60,15 +60,26 @@
     <main class="main-container">
       <h1 class="visually-hidden">Drink2Go — интернет-магазин по продаже кофейных напитков</h1>
       <section class="hero" data-test="hero">
-        <div class="hero__button-wrapper">
-          <button class="hero__button hero__button--back button" type="button">
+        <div class="hero__wrapper-button-slider">
+          <button class="hero__button hero__button--prev slider-button-prev button" type="button">
             <span class="visually-hidden">Назад</span>
           </button>
-          <button class="hero__button hero__button--up button" type="button">
+          <button class="hero__button hero__button--next button" type="button">
             <span class="visually-hidden">Вперед</span>
           </button>
         </div>
-        <div class="hero__slider">
+        <div class="hero__wrapper-pagination">
+          <button class="hero__button-pagination hero__button-pagination--active button" type="button">
+            <span class="visually-hidden">Первый слайд</span>
+          </button>
+          <button class="hero__button-pagination button" type="button">
+            <span class="visually-hidden">Второй слайд</span>
+          </button>
+          <button class="hero__button-pagination button" type="button">
+            <span class="visually-hidden">Третий слайд</span>
+          </button>
+        </div>
+        <div class="hero__slider slider-pagination">
           <div class="hero__container hero__container--flat-white hero__container--active">
             <div class="hero__container-image">
               <picture>
@@ -107,7 +118,7 @@
             </div>
           </div>
           <div class="hero__container hero__container--latte">
-            <div>
+            <div class="hero__container-image">
               <picture>
                 <source type="image/webp" media="(min-width: 1440px)"
                   srcset="images/latte-desktop1x.webp 1x, images/latte-desktop2x.webp 2x">
@@ -134,7 +145,7 @@
             </div>
           </div>
           <div class="hero__container hero__container--espresso">
-            <div>
+            <div class="hero__container-image">
               <picture>
                 <source type="image/webp" media="(min-width: 1440px)"
                   srcset="images/espresso-desktop1x.webp 1x, images/espresso-desktop2x.webp 2x">
@@ -193,7 +204,7 @@
           <fieldset class="form__group">
             <legend class="form__title">Цена</legend>
             <div class="form__wrapper">
-              <div class="form__slider"></div>
+              <div class="form__slider noUi-slider"></div>
               <div class="form__wrapper-input">
                 <label class="form__subtitle">
                   <input class="form__input form__input--min" type="text" name="price-min" placeholder="0">
