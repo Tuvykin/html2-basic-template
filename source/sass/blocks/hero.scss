@@ -47,6 +47,19 @@
     left: 10px;
     transform: translate(-50%, -50%);
   }
+
+  &:hover,
+  &:focus {
+    background: linear-gradient(90deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+  }
+
+  &:active {
+    background: linear-gradient(90deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0) 100%);
+  }
+
+  &:disabled::after {
+    background-color: var(--base-grey, #bdbdbd);
+  }
 }
 
 .hero__button--prev::after {
@@ -59,6 +72,15 @@
 
 .hero__button--next {
   right: 0;
+
+  &:hover,
+  &:focus {
+    background: linear-gradient(-90deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+  }
+
+  &:active {
+    background: linear-gradient(-90deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0) 100%);
+  }
 }
 
 .hero__old-price {
@@ -74,12 +96,28 @@
   margin-right: 15px;
 }
 
-.hero__link {
+.hero__button-card {
   border-radius: 4px;
   background-color: $base-color;
   color: $white-color;
-  padding: 10px 20px;
+  padding: 8px 20px;
   text-transform: none;
+  width: 113px;
+  font-size: 16px;
+  line-height: 24px;
+
+  &:hover,
+  &:focus {
+    background-color: $hover-color;
+  }
+
+  &:active {
+    background-color: $active-color;
+  }
+
+  &:disabled {
+    background-color: #bdbdbd;
+  }
 }
 
 .hero__container {
@@ -154,7 +192,7 @@
     line-height: 32px;
     width: 608px;
     margin: 0 auto;
-    margin-bottom: 25px;
+    margin-bottom: 22px;
   }
 
   .hero__button {
@@ -198,7 +236,7 @@
 
   .hero__description {
     margin: 0;
-    margin-bottom: 44px;
+    margin-bottom: 42px;
   }
 
   .hero__button {
@@ -238,6 +276,11 @@
 
     &--active::after {
       background-color: $base-color;
+    }
+
+    &:hover::after,
+    &:focus::after {
+      background-color: rgba(120, 89, 207, 0.25);
     }
   }
 }

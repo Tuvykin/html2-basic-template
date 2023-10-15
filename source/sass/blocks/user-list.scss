@@ -22,6 +22,15 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
+
+  &:hover::after,
+  &:focus::after {
+    background-color: $hover-color;
+  }
+
+  &:active {
+    background-color: #f0ebff;
+  }
 }
 
 .user-list__link--account::after {
@@ -40,12 +49,27 @@
   .user-list__link {
     padding: 32px 22px;
     height: 80px;
+
+    &:hover .user-list__text,
+    &:focus .user-list__text {
+      color: $hover-color;
+    }
+
+    &:active::after,
+    &:active::after {
+      background-color: $base-color;
+    }
+
+    &:active .user-list__text,
+    &:active .user-list__text {
+      color: $hover-color;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .user-list {
-    width: 261px;
+    width: 263px;
     gap: 20px;
   }
 

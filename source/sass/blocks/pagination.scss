@@ -16,6 +16,19 @@
   height: 40px;
   display: block;
   text-decoration: none;
+
+  &:hover,
+  &:focus {
+    background-color: $hover-color;
+  }
+
+  &:active {
+    background-color: $active-color;
+  }
+
+  &:disabled {
+    background-color: #e2e2e2;
+  }
 }
 
 .pagination__link--current {

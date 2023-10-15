@@ -1,5 +1,6 @@
 .nav-list {
   @include list-reset;
+  width: 100%;
 }
 
 .nav-list__item {
@@ -16,6 +17,15 @@
   border-bottom: 1px solid #f0ebff;
   font-size: 12px;
   line-height: 16px;
+
+  &:hover,
+  &:focus {
+    color: $hover-color;
+  }
+
+  &:active {
+    background-color: #f0ebff;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -30,11 +40,16 @@
 
   .nav-list__link {
     padding: 32px 21px;
+
+    &:active {
+      background-color: #f0ebff;
+    }
   }
 
   .nav-list__link--current {
     position: relative;
     padding-left: 22px;
+    color: $base-color;
 
     &::after {
       position: absolute;

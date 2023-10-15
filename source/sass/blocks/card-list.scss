@@ -58,6 +58,19 @@
     left: 22%;
     transform: translate(-50%, -50%);
   }
+
+  &:hover,
+  &:focus {
+    background-color: $hover-color;
+  }
+
+  &:active {
+    background-color: $active-color;
+  }
+
+  &:disabled {
+    background-color: #bdbdbd;
+  }
 }
 
 .card-list__wrapper {
