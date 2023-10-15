@@ -171,3 +171,43 @@
   gap: 6px;
   align-items: center;
 }
+
+@media (min-width: $tablet-width) {
+  .main-footer {
+    padding: 40px 20px;
+  }
+
+  .main-footer__wrapper {
+    padding: 0;
+    width: 728px;
+    justify-content: space-between;
+  }
+
+  .main-footer__logo {
+    width: 170px;
+  }
+
+  .main-footer__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+  }
+
+  .main-footer__item {
+    padding: 30px 0;
+
+    &::before,
+    &:last-of-type::after {
+      display: none;
+    }
+  }
+
+  .main-footer__description--address::before {
+    top: 15%;
+    left: 3%;
+  }
+
+  .main-footer__link--contacts::before {
+    left: 3%;
+  }
+}

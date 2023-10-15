@@ -20,3 +20,18 @@
     transform: translate(-50%, -50%);
   }
 }
+
+@media (min-width: $tablet-width) {
+  .map__container::after {
+    left: 52%;
+    top: 50%;
+  }
+
+  .map {
+    height: 480px;
+  }
+
+  .map__image {
+    width: 768px;
+  }
+}

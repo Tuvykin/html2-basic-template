@@ -25,3 +25,11 @@
     margin-right: 4px;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    padding: 0;
+    width: 206px;
+    margin: 0 auto;
+  }
+}
